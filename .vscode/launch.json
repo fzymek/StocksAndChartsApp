@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug tuist-my-cli (Plugins/StocksAndChartsApp)",
+            "program": "${workspaceFolder:StocksAndChartsApp}/Plugins/StocksAndChartsApp/.build/debug/tuist-my-cli",
+            "args": [],
+            "cwd": "${workspaceFolder:StocksAndChartsApp}/Plugins/StocksAndChartsApp",
+            "preLaunchTask": "swift: Build Debug tuist-my-cli (Plugins/StocksAndChartsApp)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release tuist-my-cli (Plugins/StocksAndChartsApp)",
+            "program": "${workspaceFolder:StocksAndChartsApp}/Plugins/StocksAndChartsApp/.build/release/tuist-my-cli",
+            "args": [],
+            "cwd": "${workspaceFolder:StocksAndChartsApp}/Plugins/StocksAndChartsApp",
+            "preLaunchTask": "swift: Build Release tuist-my-cli (Plugins/StocksAndChartsApp)"
+        }
+    ]
+}

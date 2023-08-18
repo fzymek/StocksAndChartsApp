@@ -1,4 +1,5 @@
 import SwiftUI
+import StocksAndChartsKit
 
 @main
 struct StocksAndChartsAppApp: App {
@@ -10,9 +11,18 @@ struct StocksAndChartsAppApp: App {
 }
 
 struct ContentView: View {
+    private let model = Model(a: "Hello, World!!!")
     var body: some View {
         VStack {
-            Text("Hello, World!")
+            Text(model.a)
         }
     }
 }
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
