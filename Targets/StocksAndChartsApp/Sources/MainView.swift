@@ -3,21 +3,20 @@ import StocksAndChartsKit
 
 struct MainView: View {
 
-    private let model = Model(a: "Hello, World!!!")
-
     var body: some View {
         TabView {
+
+            CryptoView()
+            .tabItem {
+                Label("Crypto", systemImage: "bitcoinsign.circle")
+            }
+
             Favourites()
             .tabItem {
                 Label("Favourites", systemImage: "star")
             }
 
-            Search()
-            .tabItem {
-                Label("Search", systemImage: "magnifyingglass.circle")
-            }
         }
-        
     }
 }
 
